@@ -12,8 +12,8 @@ const Home: NextPage = () => {
   return (
     <Container>
       <LoginButton>
-        <a href="/pets-availabes">
-          <img src="./images/login-button.svg" alt="Botao de login" />
+        <a href="/login">
+          <img src="./images/login-button-home.svg" alt="Botao de login" />
         </a>
       </LoginButton>
       <TextContainer>
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <a href="/about">
           <img src="./images/about-us-button.svg" alt="Sobre nos" />
         </a>
-        <a href="/pets-availabes">
+        <a href="/pets-availables">
           <img
             src="./images/pets-availabes-button.svg"
             alt="Animais disponiveis"

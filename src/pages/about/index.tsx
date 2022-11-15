@@ -1,14 +1,15 @@
+import { ReturnButtonContainer } from '@components/return-button/styled';
 import { NextPage } from 'next';
-import { Container, ReturnButton, TextContainer } from './styled';
+import { Container, TextContainer } from './styled';
 
 const About: NextPage = () => {
   return (
     <Container>
-      <ReturnButton>
+      <ReturnButtonContainer>
         <a href="/">
           <img src="./images/return-icon.svg" alt="Botão de voltar" />
         </a>
-      </ReturnButton>
+      </ReturnButtonContainer>
       <TextContainer>
         <h1>Sobre nós</h1>
         <h2>
