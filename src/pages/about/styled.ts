@@ -8,18 +8,6 @@ export const Container = styled.div`
   width: 100vw;
 `;
 
-export const ReturnButton = styled.button`
-  display: flex;
-  justify-content: flex-start;
-  border: none;
-  background-color: ${Colors.primary};
-  margin: 1.25rem 1.25rem;
-
-  img {
-    height: 2.9rem;
-  }
-`;
-
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;

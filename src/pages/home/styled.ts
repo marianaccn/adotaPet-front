@@ -95,7 +95,7 @@ export const MobileTextContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: 4.0625rem 0;
+  margin: 6.25rem 0;
 
   a {
     width: 30rem;
