@@ -1,0 +1,23 @@
+export const Colors = {
+  background: '#F0F0F7',
+  primarylighter: '#9871F5',
+  primarylight: '#916BEA',
+  primary: '#8257E5',
+  primarydark: '#774DD6',
+  primarydarker: '#6842c2',
+  secondary: '#04D361',
+  secondarydark: '#04BF58',
+  titlePrimary: '#FFFFFF',
+  textPrimary: '#D4C2FF',
+  textTitle: '#32264D',
+  textComplement: '#9C98A6',
+  textBase: '#6A6180',
+  lineWhite: '#E6E6F0',
+  inputBackground: '#F8F8FC',
+  buttonText: '#FFFFFF',
+  boxBase: '#FFFFFF',
+  boxFooter: '#FAFAFC',
+  smallInfo: '#C1BCCC',
+
+  fontSize: '60%' /* controle das medidas rem */,
+};

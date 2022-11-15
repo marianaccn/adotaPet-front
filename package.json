@@ -1,0 +1,26 @@
+{
+  "name": "adotaPet",
+  "version": "0.0.0",
+  "description": "Adota Pet",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariana Cavalcante",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.4",
+    "@types/react": "^18.0.16",
+    "babel-plugin-styled-components": "^2.0.7",
+    "typescript": "^4.7.4"
+  }
+}
