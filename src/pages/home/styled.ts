@@ -88,6 +88,7 @@ export const MobileTextContainer = styled.div`
     font-size: 1.25rem;
     line-height: 1.875rem;
     margin-top: 0.8rem;
+    white-space: nowrap;
   }
 `;
 
@@ -106,7 +107,7 @@ export const ButtonsContainer = styled.div`
     color: ${Colors.buttonText};
 
     img {
-      width: 87%;
+      width: 83%;
     }
   }
 `;
