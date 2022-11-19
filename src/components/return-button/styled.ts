@@ -6,7 +6,9 @@ export const ReturnButtonContainer = styled.button`
   justify-content: flex-start;
   border: none;
   background-color: ${Colors.primary};
-  margin: 1.25rem 1.25rem;
+  width: 100vw;
+  height: 2rem;
+  margin: 3.75rem 2rem 0;
 
   img {
     height: 2.9rem;
