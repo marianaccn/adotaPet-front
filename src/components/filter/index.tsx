@@ -1,5 +1,12 @@
 import { NextPage } from 'next';
-import { Container, TextContainer, Filters, FilterContainer } from './styled';
+import {
+  Container,
+  TextContainer,
+  PublicFilters,
+  FilterContainer,
+  PrivateFilter,
+  Filters,
+} from './styled';
 
 const Filter: NextPage = () => {
   return (
@@ -10,31 +17,45 @@ const Filter: NextPage = () => {
       </TextContainer>
 
       <Filters>
-        <FilterContainer>
-          <label>Sexo</label>
+        <PrivateFilter>
+          <label>Status</label>
           <select>
             <option value="" disabled selected>
               Selecione
             </option>
             <option>Todos</option>
-            <option>Macho</option>
-            <option>Fêmea</option>
+            <option>Adotado</option>
+            <option>Disponível</option>
           </select>
-        </FilterContainer>
+        </PrivateFilter>
 
-        <FilterContainer>
-          <label>Idade</label>
-          <select>
-            <option value="" disabled selected>
-              Selecione
-            </option>
-            <option>Todos</option>
-            <option>4 á 11 meses</option>
-            <option>1 á 5 anos</option>
-            <option>6 á 10 anos</option>
-            <option>Acima de 10 anos</option>
-          </select>
-        </FilterContainer>
+        <PublicFilters>
+          <FilterContainer>
+            <label>Sexo</label>
+            <select>
+              <option value="" disabled selected>
+                Selecione
+              </option>
+              <option>Todos</option>
+              <option>Macho</option>
+              <option>Fêmea</option>
+            </select>
+          </FilterContainer>
+
+          <FilterContainer>
+            <label>Idade</label>
+            <select>
+              <option value="" disabled selected>
+                Selecione
+              </option>
+              <option>Todos</option>
+              <option>4 á 11 meses</option>
+              <option>1 á 5 anos</option>
+              <option>6 á 10 anos</option>
+              <option>Acima de 10 anos</option>
+            </select>
+          </FilterContainer>
+        </PublicFilters>
       </Filters>
     </Container>
   );

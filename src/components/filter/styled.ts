@@ -31,9 +31,46 @@ export const TextContainer = styled.div`
 
 export const Filters = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 24px 18px 38px;
+`;
+
+export const PublicFilters = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 24px 0px 12px 0px;
+  width: 100%;
+`;
+
+export const PrivateFilter = styled.div`
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    color: ${Colors.textPrimary};
+    padding: 0 4px 4px;
+  }
+
+  select {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: ${Colors.smallInfo};
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 10px;
+  }
 `;
 
 export const FilterContainer = styled.div`
