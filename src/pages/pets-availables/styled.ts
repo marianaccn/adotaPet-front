@@ -11,6 +11,7 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${Colors.primary};
+  width: 100vw;
 
   h1 {
     margin: 3.375rem 0 2.75rem 2rem;
@@ -25,4 +26,5 @@ export const ContainerPets = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0 0;
 `;

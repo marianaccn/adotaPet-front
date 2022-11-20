@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { Container, Filters, TextContainer } from './styled';
+import { Container, TextContainer, Filters, FilterContainer } from './styled';
 
 const Filter: NextPage = () => {
   return (
@@ -10,27 +10,31 @@ const Filter: NextPage = () => {
       </TextContainer>
 
       <Filters>
-        <label>Sexo</label>
-        <select>
-          <option value="" disabled selected>
-            Selecione
-          </option>
-          <option>Todos</option>
-          <option>Macho</option>
-          <option>Fêmea</option>
-        </select>
+        <FilterContainer>
+          <label>Sexo</label>
+          <select>
+            <option value="" disabled selected>
+              Selecione
+            </option>
+            <option>Todos</option>
+            <option>Macho</option>
+            <option>Fêmea</option>
+          </select>
+        </FilterContainer>
 
-        <label>Idade</label>
-        <select>
-          <option value="" disabled selected>
-            Selecione
-          </option>
-          <option>Todos</option>
-          <option>4 á 11 meses</option>
-          <option>1 á 5 anos</option>
-          <option>6 á 10 anos</option>
-          <option>Acima de 10 anos</option>
-        </select>
+        <FilterContainer>
+          <label>Idade</label>
+          <select>
+            <option value="" disabled selected>
+              Selecione
+            </option>
+            <option>Todos</option>
+            <option>4 á 11 meses</option>
+            <option>1 á 5 anos</option>
+            <option>6 á 10 anos</option>
+            <option>Acima de 10 anos</option>
+          </select>
+        </FilterContainer>
       </Filters>
     </Container>
   );
