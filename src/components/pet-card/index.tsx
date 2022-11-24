@@ -1,15 +1,15 @@
 import { NextPage } from 'next';
-import { Container, ContainerButton, Image, PetInfo } from './styled';
-import { createPopup } from '@typeform/embed';
-import '@typeform/embed/build/css/popup.css';
+import { Container, AdoptButton, Image, PetInfo, StatusButton } from './styled';
 
-const PetCard: NextPage = () => {
-  const { toggle } = createPopup('Rk4PQ71j');
+interface IPetCardProps {
+  name: string;
+}
 
+const PetCard: NextPage<IPetCardProps> = (props) => {
   return (
     <Container>
       <Image src="./images/cat-img-1.svg" alt="Imagem do animal"></Image>
-      <h2>Bartolomeu</h2>
+      <h2>{props.name}</h2>
       <PetInfo>
         <ul>
           <li>Macho</li>
@@ -23,14 +23,20 @@ const PetCard: NextPage = () => {
           <li>FELV não testado</li>
         </ul>
       </PetInfo>
-      <ContainerButton>
-        <a onClick={toggle}>
+      <AdoptButton>
+        <a>
           <img
             src="./images/get-in-touch-button.svg"
             alt="Botão para entrar em contato"
           />
         </a>
-      </ContainerButton>
+      </AdoptButton>
+
+      <StatusButton>
+        <a>
+          <img alt="Botão para entrar em contato" />
+        </a>
+      </StatusButton>
     </Container>
   );
 };
