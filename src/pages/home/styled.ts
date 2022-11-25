@@ -35,6 +35,12 @@ export const LoginButton = styled.button`
       height: 80px;
     }
   }
+
+  @media (min-width: 1800px) {
+    img {
+      height: 100px;
+    }
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -58,6 +64,10 @@ export const LogoContainer = styled.div`
 
   @media (min-width: 1300px) {
     padding: 0 1% 0 7%;
+  }
+
+  @media (min-width: 1800px) {
+    padding: 6% 1% 0 7%;
   }
 `;
 
@@ -88,8 +98,23 @@ export const DesktopText = styled.div`
     align-items: flex-start;
     justify-content: center;
 
+    h1 {
+      font-size: 86px;
+    }
+
     h2 {
+      font-size: 25px;
       text-align: left;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    h1 {
+      font-size: 96px;
+    }
+
+    h2 {
+      font-size: 35px;
     }
   }
 `;
@@ -123,14 +148,16 @@ export const MobileText = styled.div`
   }
 
   @media (min-width: 699px) {
-    padding: 0 115px 0 70px;
+    padding: 0 5% 0 8%;
 
     h1 {
-      font-size: 20px;
+      font-size: 25px;
+      padding-top: 75px;
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 25px;
+      padding-top: 20px;
     }
   }
 
@@ -142,9 +169,11 @@ export const MobileText = styled.div`
 export const AdotaPetImage = styled.img`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 34%;
   background-color: ${Colors.primary};
+  padding: 0 40px 0 40px;
 
   @media (min-width: 699px) {
     height: 10%;
@@ -152,7 +181,7 @@ export const AdotaPetImage = styled.img`
   }
 
   @media (min-width: 1024px) {
-    width: 50%;
+    width: 42%;
     height: 500px;
     padding: 0;
   }
@@ -160,6 +189,16 @@ export const AdotaPetImage = styled.img`
   @media (min-width: 1300px) {
     width: 60%;
     height: 460px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 60%;
+    height: 580px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 60%;
+    height: 600px;
   }
 `;
 
@@ -184,8 +223,11 @@ export const ButtonsContainer = styled.div`
 
   @media (min-width: 699px) {
     a {
+      justify-content: flex-start;
+      padding: 0 0% 0 8%;
+
       img {
-        width: 70%;
+        width: 90%;
       }
     }
   }
@@ -196,6 +238,7 @@ export const ButtonsContainer = styled.div`
 
     a {
       justify-content: flex-start;
+      padding: 0 0 0 0;
 
       img {
         width: 70%;
@@ -204,11 +247,19 @@ export const ButtonsContainer = styled.div`
   }
 
   @media (min-width: 1300px) {
-    // padding: 0 9% 0 1%;
+    padding: 0 1% 0 7%;
 
     a {
       img {
-        width: 75%;
+        width: 78%;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    a {
+      img {
+        width: 86%;
       }
     }
   }
