@@ -9,6 +9,15 @@ export const Container = styled.div`
   width: 100vw;
 `;
 
+export const Line = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 10px 18px 0 18px;
+  border-bottom: 1px solid ${Colors.primarylighter};
+`;
+
 export const TextContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -33,7 +42,7 @@ export const Filters = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 24px 18px 38px;
+  margin: 0px 18px 30px;
 `;
 
 export const PublicFilters = styled.div`
@@ -45,10 +54,11 @@ export const PublicFilters = styled.div`
 `;
 
 export const PrivateFilter = styled.div`
-  display: none;
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
+  margin-top: 18px;
 
   label {
     font-family: 'Poppins', sans-serif;

@@ -1,10 +1,16 @@
 import Filter from '@components/filter';
+import { useState } from 'react';
 import PetCard from '@components/pet-card';
 import { ReturnButtonContainer } from '@components/return-button/styled';
 import { NextPage } from 'next';
 import { Container, Header, ContainerPets } from './styled';
+interface IPetCardProps {
+  name: string;
+}
 
-const PetsAvailabes: NextPage = () => {
+const PetsAvailabes: NextPage<IPetCardProps> = (props) => {
+  const [gatos, setGatos] = useState(['Bartolomeu', 'Miauzinho']);
+
   return (
     <Container>
       <Header>
@@ -19,7 +25,9 @@ const PetsAvailabes: NextPage = () => {
         <Filter></Filter>
       </Header>
       <ContainerPets>
-        <PetCard></PetCard>
+        {gatos.map((e) => (
+          <PetCard name={e} />
+        ))}
       </ContainerPets>
     </Container>
   );

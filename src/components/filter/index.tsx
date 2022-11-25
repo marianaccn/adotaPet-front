@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NextPage } from 'next';
 import {
   Container,
@@ -6,28 +7,41 @@ import {
   FilterContainer,
   PrivateFilter,
   Filters,
+  Line,
 } from './styled';
 
 const Filter: NextPage = () => {
+  const [status, setStatus] = useState('');
+
   return (
     <Container>
       <TextContainer>
         <img src="./images/filter-icon.svg" alt="Ícone de filtro"></img>
-        <p>Filte por sexo ou idade</p>
+        <p>Filte por sexo, idade ...</p>
       </TextContainer>
 
+      <Line></Line>
+
       <Filters>
-        <PrivateFilter>
-          <label>Status</label>
-          <select>
-            <option value="" disabled selected>
-              Selecione
-            </option>
-            <option>Todos</option>
-            <option>Adotado</option>
-            <option>Disponível</option>
-          </select>
-        </PrivateFilter>
+        {true && (
+          <PrivateFilter>
+            <label>Status</label>
+            <select
+              value={status}
+              onChange={(e) => {
+                setStatus(e.target.value);
+                alert(e.target.value);
+              }}
+            >
+              <option value="" disabled selected>
+                Selecione
+              </option>
+              <option value="todos">Todos</option>
+              <option value="adotado">Adotado</option>
+              <option value="disponivel">Disponível</option>
+            </select>
+          </PrivateFilter>
+        )}
 
         <PublicFilters>
           <FilterContainer>

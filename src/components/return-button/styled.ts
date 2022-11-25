@@ -6,10 +6,10 @@ export const ReturnButtonContainer = styled.button`
   justify-content: flex-start;
   border: none;
   background-color: ${Colors.primary};
-  height: 2rem;
-  margin: 3.75rem 2rem 0;
+  margin: 50px 32px 0;
+  align-items: center;
 
   img {
-    height: 2.9rem;
+    height: 43px;
   }
 `;

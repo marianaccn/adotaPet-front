@@ -22,10 +22,18 @@ export const Header = styled.div`
   }
 `;
 
+export const TopHeader = styled.div`
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+`;
+
 export const ContainerPets = styled.div`
   align-items: center;
   background-color: ${Colors.background};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px 0 0;
 `;

@@ -10,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   border-radius: 0.5rem;
   flex-direction: column;
+  margin: 30px 0 20px 0;
 
   h2 {
     font-size: 1.25rem;
@@ -43,7 +44,8 @@ export const PetInfo = styled.div`
   }
 `;
 
-export const ContainerButton = styled.div`
+export const AdoptButton = styled.div`
+  display: flex;
   width: 100%;
   height: 4.75rem;
   background-color: ${Colors.boxFooter};
@@ -54,5 +56,24 @@ export const ContainerButton = styled.div`
     width: 210px;
     height: 49px;
     margin: 13px 66px;
+  }
+`;
+
+export const StatusButton = styled.div`
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 4.75rem;
+  background-color: ${Colors.boxFooter};
+  border-radius: 0.5rem;
+  border-top: 0.38px solid ${Colors.lineWhite};
+
+  img {
+    margin: 14px 0 14px;
+    content: url('./images/adopted-status-button.svg');
+
+    &:hover {
+      content: url('./images/not-adopted-status-button.svg');
+    }
   }
 `;

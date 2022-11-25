@@ -3,26 +3,8 @@ import { Colors } from '../../styles/theme';
 
 export const Container = styled.div`
   background-color: ${Colors.primary};
-  color: ${Colors.titlePrimary};
   height: 100vh;
   width: 100vw;
-
-  h1 {
-    font-weight: 400;
-    font-family: Poppins, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    margin-top: 4.5rem;
-    color: ${Colors.titlePrimary};
-  }
-
-  h2 {
-    font-weight: 600;
-    font-family: Poppins, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    margin-top: 0.8rem;
-  }
 `;
 
 export const LoginButton = styled.button`
@@ -33,73 +15,201 @@ export const LoginButton = styled.button`
   width: 97vw;
 
   img {
-    height: 3.6rem;
+    height: 57.6px;
+  }
+
+  @media (min-width: 699px) {
+    img {
+      height: 60px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      height: 60px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    img {
+      height: 80px;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    img {
+      height: 100px;
+    }
   }
 `;
 
-export const AdotaPetImage = styled.img`
+export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 34%;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+
+  @media (min-width: 699px) {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 1% 0 5%;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 0 1% 0 7%;
+  }
+
+  @media (min-width: 1800px) {
+    padding: 6% 1% 0 7%;
+  }
 `;
 
-export const TextContainer = styled.div`
-  display: flex;
+export const DesktopText = styled.div`
+  display: none;
   justify-content: center;
   text-align: center;
   margin-bottom: 2rem;
 
   h1 {
-    display: none;
     font-family: Lalezar, sans-serif;
     font-size: 96px;
     font-weight: 400;
-    letter-spacing: 0em;
     text-align: left;
     color: ${Colors.titlePrimary};
   }
 
   h2 {
-    display: none;
     font-weight: 500;
-    font-size: 3.6rem;
+    font-size: 30px;
     line-height: 4.6rem;
+    color: ${Colors.textPrimary};
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h1 {
+      font-size: 86px;
+    }
+
+    h2 {
+      font-size: 25px;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    h1 {
+      font-size: 96px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
   }
 `;
 
-export const MobileTextContainer = styled.div`
+export const MobileText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: ${Colors.primary};
-  color: ${Colors.titlePrimary};
-  margin: 0 115px 0 61px;
+  padding: 0 115px 0 30px;
 
   h1 {
+    display: flex;
     font-weight: 400;
     font-family: Poppins, sans-serif;
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.875rem;
-    margin-top: 4.5rem;
+    padding-top: 4.5rem;
     color: ${Colors.titlePrimary};
   }
 
   h2 {
     font-weight: 600;
     font-family: Poppins, sans-serif;
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.875rem;
-    margin-top: 0.8rem;
+    padding-top: 0.8rem;
     white-space: nowrap;
+    color: ${Colors.titlePrimary};
+  }
+
+  @media (min-width: 699px) {
+    padding: 0 5% 0 8%;
+
+    h1 {
+      font-size: 25px;
+      padding-top: 75px;
+    }
+
+    h2 {
+      font-size: 25px;
+      padding-top: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const AdotaPetImage = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34%;
+  background-color: ${Colors.primary};
+  padding: 0 40px 0 40px;
+
+  @media (min-width: 699px) {
+    height: 10%;
+    padding: 0 130px 0 130px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 42%;
+    height: 500px;
+    padding: 0;
+  }
+
+  @media (min-width: 1300px) {
+    width: 60%;
+    height: 460px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 60%;
+    height: 580px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 60%;
+    height: 600px;
   }
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: center;
-  margin: 6.25rem 0;
+  justify-content: flex-start;
+  padding: 15% 0 5%;
+  background-color: ${Colors.primary};
 
   a {
     width: 30rem;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,6 +218,49 @@ export const ButtonsContainer = styled.div`
 
     img {
       width: 83%;
+    }
+  }
+
+  @media (min-width: 699px) {
+    a {
+      justify-content: flex-start;
+      padding: 0 0% 0 8%;
+
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+    padding: 0 1% 0 5%;
+
+    a {
+      justify-content: flex-start;
+      padding: 0 0 0 0;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    padding: 0 1% 0 7%;
+
+    a {
+      img {
+        width: 78%;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    a {
+      img {
+        width: 86%;
+      }
     }
   }
 `;
