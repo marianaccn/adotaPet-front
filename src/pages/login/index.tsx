@@ -24,7 +24,7 @@ const Login: NextPage = () => {
       sessionStorage.setItem('token', token.toString());
       window.location.href = '/registered-pets';
     } else {
-      alert('errou');
+      alert('Email ou email incoretos');
     }
   };
 

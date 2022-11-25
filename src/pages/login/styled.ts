@@ -16,20 +16,45 @@ export const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 67px 0 0 0;
+
+  @media (min-width: 699px) {
+    margin: 77px 0 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 0 0 0;
+    justify-content: center;
+  }
 `;
 
 export const TextContainer = styled.div`
   background-color: ${Colors.primary};
   display: flex;
   justify-content: center;
-  margin: 0 0 4.875rem;
+  margin: 0 0 78px;
 
   h1 {
     font-family: Archivo, sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 2.3125rem;
     color: ${Colors.titlePrimary};
+  }
+
+  @media (min-width: 699px) {
+    margin: 0 0 98px;
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    margin: 0 0 100px;
+
+    h1 {
+      font-size: 45px;
+    }
   }
 `;
 
@@ -55,6 +80,14 @@ export const LoginInput = styled.input`
   ::-webkit-input-placeholder {
     color: ${Colors.smallInfo};
   }
+
+  @media (min-width: 699px) {
+    width: 399px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 599px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -63,5 +96,11 @@ export const ButtonContainer = styled.div`
 
   img {
     height: 50px;
+  }
+
+  @media (min-width: 699px) {
+    img {
+      height: 55px;
+    }
   }
 `;
