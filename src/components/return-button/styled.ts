@@ -12,4 +12,10 @@ export const ReturnButtonContainer = styled.button`
   img {
     height: 43px;
   }
+
+  @media (min-width: 699px) {
+    img {
+      height: 53px;
+    }
+  }
 `;

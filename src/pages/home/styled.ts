@@ -67,7 +67,7 @@ export const LogoContainer = styled.div`
   }
 
   @media (min-width: 1800px) {
-    padding: 6% 1% 0 7%;
+    padding: 0% 1% 0 7%;
   }
 `;
 
