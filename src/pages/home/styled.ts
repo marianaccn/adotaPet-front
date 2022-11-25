@@ -5,10 +5,6 @@ export const Container = styled.div`
   background-color: ${Colors.primary};
   height: 100vh;
   width: 100vw;
-
-  @media (min-width: 1100px) {
-    // display: flex;
-  }
 `;
 
 export const LoginButton = styled.button`
@@ -28,9 +24,15 @@ export const LoginButton = styled.button`
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1024px) {
     img {
       height: 60px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    img {
+      height: 80px;
     }
   }
 `;
@@ -47,11 +49,15 @@ export const LogoContainer = styled.div`
     padding-bottom: 0;
   }
 
-  @media (min-width: 1099px) {
+  @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0 36px 0 93px;
+    padding: 0 1% 0 5%;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 0 1% 0 7%;
   }
 `;
 
@@ -76,7 +82,7 @@ export const DesktopText = styled.div`
     color: ${Colors.textPrimary};
   }
 
-  @media (min-width: 1099px) {
+  @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -128,7 +134,7 @@ export const MobileText = styled.div`
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;
@@ -138,23 +144,29 @@ export const AdotaPetImage = styled.img`
   justify-content: center;
   width: 100%;
   height: 34%;
+  background-color: ${Colors.primary};
 
   @media (min-width: 699px) {
     height: 10%;
     padding: 0 130px 0 130px;
   }
 
-  @media (min-width: 1099px) {
+  @media (min-width: 1024px) {
     width: 50%;
     height: 500px;
     padding: 0;
+  }
+
+  @media (min-width: 1300px) {
+    width: 60%;
+    height: 460px;
   }
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: center;
-  padding: 70px 0 20px;
+  justify-content: flex-start;
+  padding: 15% 0 5%;
   background-color: ${Colors.primary};
 
   a {
@@ -178,13 +190,25 @@ export const ButtonsContainer = styled.div`
     }
   }
 
-  @media (min-width: 1099px) {
+  @media (min-width: 1024px) {
     justify-content: flex-start;
-    padding: 0 93px 0 36px;
+    padding: 0 1% 0 5%;
+
+    a {
+      justify-content: flex-start;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    // padding: 0 9% 0 1%;
 
     a {
       img {
-        width: 70%;
+        width: 75%;
       }
     }
   }
