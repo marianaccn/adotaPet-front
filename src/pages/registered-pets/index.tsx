@@ -6,7 +6,7 @@ import { NextPage } from 'next';
 import { Container, Header, ContainerPets, TopHeader } from './styled';
 
 const PetsRegistered: NextPage = () => {
-  const [gatos, setGatos] = useState(['bartolomeu', 'miuazinho']);
+  const [gatos, setGatos] = useState(['Bartolomeu', 'Miuazinho']);
 
   return (
     <Container>
