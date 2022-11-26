@@ -18,4 +18,10 @@ export const ReturnButtonContainer = styled.button`
       height: 53px;
     }
   }
+
+  @media (min-width: 1024px) {
+    img {
+      height: 63px;
+    }
+  }
 `;

@@ -17,7 +17,7 @@ const Filter: NextPage = () => {
     <Container>
       <TextContainer>
         <img src="./images/filter-icon.svg" alt="Ícone de filtro"></img>
-        <p>Filte por sexo, idade ...</p>
+        <p>Filtre por sexo, idade ...</p>
       </TextContainer>
 
       <Line></Line>

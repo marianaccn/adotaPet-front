@@ -77,6 +77,12 @@ export const PetInfo = styled.div`
     justify-content: center;
     align-items: flex-start;
   }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 22px;
+    }
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -101,6 +107,12 @@ export const TextContainer = styled.div`
       font-weight: 400;
       line-height: 26px;
       color: ${Colors.textBase};
+    }
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      font-size: 15px;
     }
   }
 `;
