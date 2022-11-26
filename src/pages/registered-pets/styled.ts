@@ -28,6 +28,7 @@ export const Header = styled.div`
   }
 
   @media (min-width: 1024px) {
+    padding: 0 50px;
     h1 {
       font-size: 40px;
       letter-spacing: 1px;
@@ -48,7 +49,7 @@ export const NewPetButton = styled.img`
     height: 66px;
   }
 
-  @media (min-width: 699px) {
+  @media (min-width: 1024px) {
     width: 200px;
   }
 `;

@@ -3,8 +3,8 @@ import { NextPage } from 'next';
 import {
   Container,
   TextContainer,
-  PublicFilters,
-  FilterContainer,
+  PublicFiltersContainer,
+  PublicFilter,
   PrivateFilter,
   Filters,
   Line,
@@ -43,8 +43,8 @@ const Filter: NextPage = () => {
           </PrivateFilter>
         )}
 
-        <PublicFilters>
-          <FilterContainer>
+        <PublicFiltersContainer>
+          <PublicFilter>
             <label>Sexo</label>
             <select>
               <option value="" disabled selected>
@@ -54,9 +54,9 @@ const Filter: NextPage = () => {
               <option>Macho</option>
               <option>Fêmea</option>
             </select>
-          </FilterContainer>
+          </PublicFilter>
 
-          <FilterContainer>
+          <PublicFilter>
             <label>Idade</label>
             <select>
               <option value="" disabled selected>
@@ -68,8 +68,8 @@ const Filter: NextPage = () => {
               <option>6 á 10 anos</option>
               <option>Acima de 10 anos</option>
             </select>
-          </FilterContainer>
-        </PublicFilters>
+          </PublicFilter>
+        </PublicFiltersContainer>
       </Filters>
     </Container>
   );

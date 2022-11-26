@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
 `;
 
 export const Line = styled.div`
@@ -16,6 +15,14 @@ export const Line = styled.div`
   margin: 10px 18px 0 18px;
   width: 90%;
   border-bottom: 1px solid ${Colors.primarylighter};
+
+  @media (min-width: 1024px) {
+    width: 95%;
+  }
+
+  @media (min-width: 1300px) {
+    width: 97%;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -55,6 +62,23 @@ export const TextContainer = styled.div`
   }
 `;
 
+export const PublicFiltersContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 24px 0px 12px 0px;
+  width: 100%;
+
+  @media (min-width: 699px) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+  }
+`;
+
 export const Filters = styled.div`
   display: flex;
   align-items: flex-start;
@@ -62,24 +86,17 @@ export const Filters = styled.div`
   margin: 0px 18px 30px;
 
   @media (min-width: 699px) {
+    flex-direction: row;
     margin: 10px 18px 30px;
   }
 `;
 
-export const PublicFilters = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 24px 0px 12px 0px;
-  width: 100%;
-`;
-
 export const PrivateFilter = styled.div`
-  display: flex;
+  display: none;
   justify-content: flex-start;
   flex-direction: column;
-  width: 100%;
   margin-top: 18px;
+  width: 100%;
 
   label {
     font-family: 'Poppins', sans-serif;
@@ -101,10 +118,11 @@ export const PrivateFilter = styled.div`
     border-radius: 8px;
     height: 48px;
     padding: 10px;
+    width: 100%;
   }
 
   @media (min-width: 699px) {
-    width: 99%;
+    margin-top: 24px;
 
     label {
       font-size: 14px;
@@ -112,7 +130,6 @@ export const PrivateFilter = styled.div`
   }
 
   @media (min-width: 1024px) {
-    width: 99%;
     margin: 18px 0 0 10px;
 
     select {
@@ -126,7 +143,7 @@ export const PrivateFilter = styled.div`
   }
 `;
 
-export const FilterContainer = styled.div`
+export const PublicFilter = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -155,19 +172,17 @@ export const FilterContainer = styled.div`
   }
 
   @media (min-width: 699px) {
-    width: 100%;
-
     label {
       font-size: 14px;
     }
 
     select {
-      width: 99%;
       font-size: 14px;
     }
   }
 
   @media (min-width: 1024px) {
+    justify-content: center;
     margin: 18px 0 0 10px;
 
     label {
@@ -176,8 +191,19 @@ export const FilterContainer = styled.div`
     }
 
     select {
-      width: 99%;
       font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    select {
+      width: 288px;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    select {
+      width: 413px;
     }
   }
 `;
