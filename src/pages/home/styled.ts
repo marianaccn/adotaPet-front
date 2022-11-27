@@ -48,7 +48,7 @@ export const LogoContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 57px 0 32px;
 
   @media (min-width: 699px) {
     display: flex;
@@ -59,15 +59,12 @@ export const LogoContainer = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0 1% 0 5%;
+    align-items: center;
+    padding: 10% 1% 0 5%;
   }
 
   @media (min-width: 1300px) {
-    padding: 0 1% 0 7%;
-  }
-
-  @media (min-width: 1800px) {
-    padding: 0% 1% 0 7%;
+    padding: 5% 1% 0 7%;
   }
 `;
 
@@ -110,7 +107,17 @@ export const DesktopText = styled.div`
 
   @media (min-width: 1300px) {
     h1 {
-      font-size: 96px;
+      font-size: 90px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    h1 {
+      font-size: 93px;
     }
 
     h2 {
@@ -173,7 +180,7 @@ export const AdotaPetImage = styled.img`
   width: 100%;
   height: 34%;
   background-color: ${Colors.primary};
-  padding: 50px 40px 0 40px;
+  padding: 0px 40px 0 40px;
 
   @media (min-width: 699px) {
     height: 10%;
@@ -188,17 +195,12 @@ export const AdotaPetImage = styled.img`
 
   @media (min-width: 1300px) {
     width: 60%;
-    height: 460px;
-  }
-
-  @media (min-width: 1300px) {
-    width: 60%;
-    height: 580px;
+    height: 450px;
   }
 
   @media (min-width: 1800px) {
     width: 60%;
-    height: 600px;
+    height: 550px;
   }
 `;
 
@@ -256,7 +258,7 @@ export const ButtonsContainer = styled.div`
     }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1800px) {
     a {
       img {
         width: 86%;

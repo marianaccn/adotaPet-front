@@ -92,7 +92,7 @@ export const Filters = styled.div`
 `;
 
 export const PrivateFilter = styled.div`
-  display: none;
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin-top: 18px;

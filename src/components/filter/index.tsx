@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
 import {
   Container,
@@ -12,6 +12,11 @@ import {
 
 const Filter: NextPage = () => {
   const [status, setStatus] = useState('');
+  const [token, setToken] = useState('');
+  useEffect(() => {
+    var item_value = sessionStorage.getItem('token');
+    setToken(item_value);
+  }, []);
 
   return (
     <Container>
@@ -23,7 +28,7 @@ const Filter: NextPage = () => {
       <Line></Line>
 
       <Filters>
-        {true && (
+        {token && (
           <PrivateFilter>
             <label>Status</label>
             <select

@@ -5,6 +5,7 @@ export const Container = styled.div`
   background-color: ${Colors.background};
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 `;
 
 export const Header = styled.div`

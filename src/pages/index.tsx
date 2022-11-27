@@ -12,11 +12,6 @@ import {
 const Home: NextPage = () => {
   return (
     <Container>
-      <LoginButton>
-        <a href="/login">
-          <img src="./images/login-button-home.svg" alt="Botao de login" />
-        </a>
-      </LoginButton>
       <LogoContainer>
         <DesktopText>
           <h1>Adota Pet</h1>
@@ -26,10 +21,7 @@ const Home: NextPage = () => {
           </h2>
         </DesktopText>
 
-        <AdotaPetImage
-          src="./images/adota-pet-img.svg"
-          alt="imagem AdotaPet"
-        ></AdotaPetImage>
+        <AdotaPetImage src="/images/adota-pet-img.svg" alt="imagem AdotaPet" />
 
         <MobileText>
           <h1>Seja bem-vindo.</h1>
