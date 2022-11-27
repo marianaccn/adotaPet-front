@@ -16,9 +16,23 @@ export const Header = styled.div`
   h1 {
     color: ${Colors.titlePrimary};
     font-family: Archivo, sans-serif;
-    font-size: 1.875rem;
+    font-size: 30px;
     font-weight: 700;
-    margin: 3.375rem 0 2.75rem 2rem;
+    margin: 54px 0 44px 32px;
+  }
+
+  @media (min-width: 699px) {
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 50px;
+    h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
   }
 `;
 
@@ -27,6 +41,17 @@ export const TopHeader = styled.div`
   display: flex;
   justify-content: space-between;
   padding-right: 16px;
+`;
+
+export const NewPetButton = styled.img`
+  @media (min-width: 699px) {
+    width: 180px;
+    height: 66px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 200px;
+  }
 `;
 
 export const ContainerPets = styled.div`

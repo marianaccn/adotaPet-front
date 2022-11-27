@@ -67,7 +67,7 @@ export const LogoContainer = styled.div`
   }
 
   @media (min-width: 1800px) {
-    padding: 6% 1% 0 7%;
+    padding: 0% 1% 0 7%;
   }
 `;
 
@@ -173,7 +173,7 @@ export const AdotaPetImage = styled.img`
   width: 100%;
   height: 34%;
   background-color: ${Colors.primary};
-  padding: 0 40px 0 40px;
+  padding: 50px 40px 0 40px;
 
   @media (min-width: 699px) {
     height: 10%;

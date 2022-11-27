@@ -18,6 +18,7 @@ export const Colors = {
   boxBase: '#FFFFFF',
   boxFooter: '#FAFAFC',
   smallInfo: '#C1BCCC',
+  darkText: '#32264D',
 
   fontSize: '60%' /* controle das medidas rem */,
 };

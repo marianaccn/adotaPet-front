@@ -20,6 +20,21 @@ export const Header = styled.div`
     font-weight: 700;
     margin: 3.375rem 0 2.75rem 2rem;
   }
+
+  @media (min-width: 699px) {
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 50px;
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  }
 `;
 
 export const ContainerPets = styled.div`
