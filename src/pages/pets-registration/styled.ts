@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: auto;
+  overflow-x: hidden;
 `;
 
 export const Header = styled.div`
@@ -128,7 +129,13 @@ export const ContainerInputs = styled.div`
     padding: 15px 4px 4px;
   }
 
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
   @media (min-width: 1300px) {
+    flex-direction: row;
+
     label {
       font-size: 16px;
     }
@@ -148,6 +155,28 @@ export const ContainerInputs = styled.div`
       padding: 30px 4px 10px;
       font-size: 20px;
     }
+  }
+`;
+
+export const InputColumnsDesktop = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  @media (min-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 10px;
   }
 `;
 
@@ -180,21 +209,11 @@ export const InputFileLabel = styled.label`
     }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1024px) {
     img {
-      height: 45px;
+      height: 40px;
     }
   }
-
-  @media (min-width: 1800px) {
-    img {
-      height: 55px;
-    }
-  }
-`;
-
-export const RadioInput = styled.div`
-  display: flex;
 `;
 
 export const Select = styled.select`
