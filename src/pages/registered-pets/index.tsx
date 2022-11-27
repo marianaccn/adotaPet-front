@@ -32,7 +32,7 @@ const PetsRegistered: NextPage = () => {
         </TopHeader>
 
         <h1 onClick={() => setGatos(['bartolomeu', 'miauzinho'])}>
-          Animaizinhos<br></br> cadastrados
+          Animais<br></br> cadastrados
         </h1>
         <Filter />
       </Header>

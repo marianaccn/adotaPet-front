@@ -19,6 +19,7 @@ const PetsAvailabes: NextPage<IPetCardProps> = (props) => {
             <img src="./images/return-icon.svg" alt="Botão de voltar" />
           </a>
         </ReturnButtonContainer>
+
         <h1>
           Animaizinhos<br></br> disponíveis
         </h1>
