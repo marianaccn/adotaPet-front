@@ -10,8 +10,16 @@ import {
   Line,
 } from './styled';
 
-const Filter: NextPage = () => {
-  const [status, setStatus] = useState('');
+interface IFilterProps {
+  filters: {
+    gender: string;
+    ageRange: string;
+    status: string;
+  };
+  setFilters: (data: any) => void;
+}
+
+const Filter: NextPage<IFilterProps> = ({ filters, setFilters }) => {
   const [token, setToken] = useState('');
   useEffect(() => {
     var item_value = sessionStorage.getItem('token');
@@ -32,16 +40,11 @@ const Filter: NextPage = () => {
           <PrivateFilter>
             <label>Status</label>
             <select
-              value={status}
+              value={filters.status}
               onChange={(e) => {
-                setStatus(e.target.value);
-                alert(e.target.value);
+                setFilters({ ...filters, status: e.target.value });
               }}
             >
-              <option value="" disabled selected>
-                Selecione
-              </option>
-              <option value="todos">Todos</option>
               <option value="adotado">Adotado</option>
               <option value="disponivel">Disponível</option>
             </select>
@@ -51,27 +54,31 @@ const Filter: NextPage = () => {
         <PublicFiltersContainer>
           <PublicFilter>
             <label>Sexo</label>
-            <select>
-              <option value="" disabled selected>
-                Selecione
-              </option>
-              <option>Todos</option>
-              <option>Macho</option>
-              <option>Fêmea</option>
+            <select
+              value={filters.gender}
+              onChange={(e) => {
+                setFilters({ ...filters, gender: e.target.value });
+              }}
+            >
+              <option value="">Todos</option>
+              <option value="m">Macho</option>
+              <option value="f">Fêmea</option>
             </select>
           </PublicFilter>
 
           <PublicFilter>
             <label>Idade</label>
-            <select>
-              <option value="" disabled selected>
-                Selecione
-              </option>
+            <select
+              value={filters.ageRange}
+              onChange={(e) => {
+                setFilters({ ...filters, ageRange: e.target.value });
+              }}
+            >
               <option>Todos</option>
-              <option>4 á 11 meses</option>
-              <option>1 á 5 anos</option>
-              <option>6 á 10 anos</option>
-              <option>Acima de 10 anos</option>
+              <option value="4 week 11 month">4 á 11 meses</option>
+              <option value="1 year 5 year">1 á 5 anos</option>
+              <option value="6 year 10 year">6 á 10 anos</option>
+              <option value="10 year 99 year">Acima de 10 anos</option>
             </select>
           </PublicFilter>
         </PublicFiltersContainer>

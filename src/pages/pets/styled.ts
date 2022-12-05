@@ -17,9 +17,9 @@ export const Header = styled.div`
   h1 {
     color: ${Colors.titlePrimary};
     font-family: Archivo, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
-    margin: 54px 0 44px 32px;
+    margin: 3.375rem 0 2.75rem 2rem;
   }
 
   @media (min-width: 699px) {
@@ -30,6 +30,7 @@ export const Header = styled.div`
 
   @media (min-width: 1024px) {
     padding: 0 50px;
+
     h1 {
       font-size: 40px;
       letter-spacing: 1px;
@@ -61,5 +62,4 @@ export const ContainerPets = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0 0;
 `;

@@ -144,8 +144,24 @@ export const AdoptButton = styled.div`
   }
 `;
 
-export const StatusButton = styled.div`
-  display: none;
+export const ImgButton = styled.img`
+  margin: 14px 0 14px;
+  content: ${({ status }) =>
+    status === 'disponivel'
+      ? 'url("/images/not-adopted-status-button.svg")'
+      : 'url("/images/adopted-status-button.svg")'};
+
+  &:hover {
+    content: url('/images/edit-button.svg');
+  }
+
+  @media (min-width: 699px) {
+    margin: 15px 0 0px;
+  }
+`;
+
+export const StatusButton = styled.div<{ status: Boolean }>`
+  display: flex;
   justify-content: center;
   width: 100%;
   height: 76px;
@@ -153,23 +169,9 @@ export const StatusButton = styled.div`
   border-radius: 8px;
   border-top: 1px solid ${Colors.lineWhite};
 
-  img {
-    margin: 14px 0 14px;
-    content: url('./images/adopted-status-button.svg');
-
-    &:hover {
-      content: url('./images/not-adopted-status-button.svg');
-    }
-  }
-
   @media (min-width: 699px) {
-    display: none;
     justify-content: flex-end;
     height: 86px;
     padding: 0px 35px 0 0;
-
-    img {
-      margin: 15px 0 0px;
-    }
   }
 `;

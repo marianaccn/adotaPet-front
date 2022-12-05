@@ -12,17 +12,16 @@
   "author": "Mariana Cavalcante",
   "license": "ISC",
   "dependencies": {
-    "@typeform/embed-react": "^2.4.0",
-    "next": "^12.2.4",
+    "next": "^12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.5",
-    "sweetalert2": "^11.6.9"
+    "styled-components": "^5.3.6",
+    "sweetalert2": "^11.6.14"
   },
   "devDependencies": {
-    "@types/node": "^18.6.4",
-    "@types/react": "^18.0.16",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
     "babel-plugin-styled-components": "^2.0.7",
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.3"
   }
 }

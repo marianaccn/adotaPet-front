@@ -21,6 +21,7 @@
     "incremental": true,
     "paths": {
       "@components/*": ["src/components/*"],
+      "@services/*": ["src/services/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]
     }

@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <a href="/about">
           <img src="./images/about-us-button.svg" alt="Sobre nos" />
         </a>
-        <a href="/pets-availables">
+        <a href="/pets">
           <img
             src="./images/pets-availabes-button.svg"
             alt="Animais disponiveis"

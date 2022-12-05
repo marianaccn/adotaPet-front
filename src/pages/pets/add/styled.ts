@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Colors } from '../../styles/theme';
+import { Colors } from '../../../styles/theme';
 
 export const Container = styled.div`
   background-color: ${Colors.background};
@@ -235,7 +235,7 @@ export const Select = styled.select`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 30px 0;
 

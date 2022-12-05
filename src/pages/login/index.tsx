@@ -9,20 +9,17 @@ import {
   LoginInput,
   TextContainer,
 } from './styled';
+import { LoginService } from '@services/user';
 
 const Login: NextPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const verify = async (email, password) => {
-    return email === 'dudu' && password === '123';
-  };
-
   const login = async () => {
-    const token = await verify(email, password);
+    const token = await LoginService(email, password);
     if (token) {
       sessionStorage.setItem('token', token.toString());
-      window.location.href = '/registered-pets';
+      window.location.href = '/pets';
     } else {
       alert('Email ou email incoretos');
     }
